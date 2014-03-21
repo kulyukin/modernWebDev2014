@@ -4,6 +4,7 @@
     <title>Auction Homepage</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
 </head>
 <body>
@@ -17,7 +18,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="javascript:void(0);">ABC Auction</a>
+            <a class="navbar-brand" href="index.html">ABC Auction</a>
         </div>
         <div class="navbar-collapse collapse">
             <form class="navbar-form navbar-left navbar-input-group" role="search">
@@ -38,8 +39,8 @@
 </div>
 <!-- / Navbar -->
 
+
 <div class="container">
-   <div id="mainContainer">
             <div class="row">
                 <!-- Featured Products -->
 
@@ -73,7 +74,78 @@
 
                 <!-- / Featured Products -->
             </div>
-            <br/><br/>
+
+            <div id="searchContainer">
+                <div>
+                    <a href="index.html">Home</a> <span class="glyphicon glyphicon-chevron-right"></span>
+                    Search Results
+                </div>
+                <br/>
+
+                <div class="row">
+                    <form role="form">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p>Product</p>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-12">
+                                    <input type="text" class="form-control"  placeholder="Product title"><br/>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-12">
+                                    <select class="form-control">
+                                        <option>Category</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select><br/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-8">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <p>Current price</p>
+                                    <div class="row">
+                                        <div class="col-xs-6"><input type="text" class="form-control"/></div>
+                                        <div class="col-xs-6"><input type="text" class="form-control"/></div>
+                                    </div><br/>
+                                    <div id="slider"></div><br/>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-xs-12"><p>Max Auction Close Date</p></div>
+                                        <div class="col-xs-12">
+                                            <div class="row">
+                                                <div class="col-xs-12"><input type="date" id="close-date" class="form-control"/></div>
+                                            </div><br>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="row">
+                                                <div class="col-xs-8"><p>Number of Bids</p></div>
+                                                <div class="col-xs-4">
+                                                    <input type="number" id="input-number-of-bids" value="3" class="pull-right form-control"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- <div class="col-sm-12 col-md-4">Max auction close date</div>-->
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 text-center"><button id="fnd-now-btn" class="btn btn-primary">Find now</button></div>
+                    </form>
+                </div>
+                <hr>
+            </div>
+
+            <h2 id="app-header"></h2>
 
             <div class="row">
                 <!-- Featured Products list with thumbnails and description  -->
@@ -83,87 +155,6 @@
 
                 <!-- / Featured Products list with thumbnails and description  -->
             </div>
-    </div>
-
-    <div id="searchContainer">
-        <div>
-            <a href="javascript:void(0)">Home</a> <span class="glyphicon glyphicon-chevron-right"></span>
-            Search Results
-        </div>
-        <br/>
-
-        <div class="row">
-            <form role="form">
-                <div class="col-sm-12 col-md-4">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <p>Product</p>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-12">
-                            <input type="text" class="form-control"  placeholder="Product title"><br/>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-12">
-                            <select class="form-control">
-                                <option>Category</option>
-                                <option>1</option>
-                                <option>2</option>
-                            </select><br/>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-8">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <p>Current price</p>
-                            <div class="row">
-                                <div class="col-xs-6"><input type="text" class="form-control"/></div>
-                                <div class="col-xs-6"><input type="text" class="form-control"/></div>
-                            </div><br/>
-                            <div id="slider"></div><br/>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="row">
-                                <div class="col-xs-12"><p>Max Auction Close Date</p></div>
-                                <div class="col-xs-12">
-                                    <div class="row">
-                                        <div class="col-xs-12"><input type="date" id="close-date" class="form-control"/></div>
-                                    </div><br>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="row">
-                                        <div class="col-xs-8"><p>Number of Bids</p></div>
-                                        <div class="col-xs-4">
-                                            <input type="number" id="input-number-of-bids" value="3" class="pull-right form-control"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- <div class="col-sm-12 col-md-4">Max auction close date</div>-->
-                    </div>
-
-                </div>
-
-                <div class="col-xs-12 text-center"><button class="btn btn-primary">Find now</button></div>
-            </form>
-        </div>
-        <hr>
-        <div class="row">
-            <!-- Featured Products list with thumbnails and description  -->
-            <ul class="list-unstyled" id="items-result-list">
-
-            </ul>
-
-            <!-- / Featured Products list with thumbnails and description  -->
-        </div>
-
-    </div>
-
 
     <!-- Footer -->
     <footer class="text-center">
@@ -179,6 +170,7 @@
 </div>
 
 <script src="assets/js/jquery-2.1.0.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/handlebars-v1.3.0.js"></script>
 <script src="assets/js/app.js"></script>
