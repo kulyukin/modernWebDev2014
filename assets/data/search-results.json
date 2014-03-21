@@ -3,7 +3,7 @@
     "items": [
     {
         "title": "Unit 1",
-        "thumb": "assets/img/01-1.jpg",
+        "thumb": "assets/img/01.jpg",
         "url": "",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
         "timeleft": "2",
@@ -12,7 +12,7 @@
     },
     {
         "title": "Unit 2",
-        "thumb": "assets/img/01-2.jpg",
+        "thumb": "assets/img/02.jpg",
         "url": "",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
         "timeleft": "2",
@@ -21,7 +21,7 @@
     },
     {
         "title": "Unit 3",
-        "thumb": "assets/img/01-3.jpg",
+        "thumb": "assets/img/03.jpg",
         "url": "",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
         "timeleft": "2",
@@ -30,7 +30,7 @@
     },
     {
         "title": "Unit 4",
-        "thumb": "assets/img/01-4.jpg",
+        "thumb": "assets/img/04.jpg",
         "url": "",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
         "timeleft": "2",
@@ -39,7 +39,7 @@
     },
     {
         "title": "Unit 5",
-        "thumb": "assets/img/01-5.jpg",
+        "thumb": "assets/img/05.jpg",
         "url": "",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
         "timeleft": "2",
@@ -48,7 +48,7 @@
     },
     {
         "title": "Unit 6",
-        "thumb": "assets/img/01-6.jpg",
+        "thumb": "assets/img/06.jpg",
         "url": "",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
         "timeleft": "2",
