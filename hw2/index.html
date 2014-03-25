@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Auction Homepage</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body ng-app="auction">
+
+<auction-navbar></auction-navbar>
+
+<div class="container" ng-view></div>
+
+<auction-footer></auction-footer>
+
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+
+<script src="scripts/controller/HomeController.js"></script>
+<script src="scripts/controller/SearchController.js"></script>
+<script src="scripts/model/ProductModel.js"></script>
+<script src="scripts/service/ProductService.js"></script>
+<script src="scripts/js/app.js"></script>
+
+</body>
+</html>
