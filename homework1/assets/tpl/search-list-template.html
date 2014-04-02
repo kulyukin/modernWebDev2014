@@ -1,0 +1,44 @@
+{{#each this}}
+<li class="col-md-6">
+    <div class="row">
+
+        <div class="col-xs-4">
+            <a href="javascript:void(0)"><img src="{{thumb}}" alt="" class="img-responsive"></a>
+        </div>
+
+        <div class="col-xs-8">
+            <h2><a href="javascript:void(0)">{{title}}</a></h2>
+            <p>
+                {{description}}
+            </p>
+        </div>
+
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-sm-push-8">
+            <div class="row">
+                <div class="col-xs-4 col-sm-12">
+                    <span class="glyphicon glyphicon-usd"></span> {{price}}
+                </div>
+                <div class="col-xs-8 col-sm-12"><small>Current Price</small></div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+            <div class="row">
+                <div class="col-xs-4 col-sm-12"><span class="glyphicon glyphicon-eye-open"></span> {{watchers}}</div>
+                <div class="col-xs-8 col-sm-12"><small>Watchers</small></div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-sm-pull-8">
+            <div class="row">
+                <div class="col-xs-4 col-sm-12"><b>6 h left</b></div>
+                <div class="col-xs-8 col-sm-12"><small>{{timeleft}}</small></div>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+</li>
+{{/each}}

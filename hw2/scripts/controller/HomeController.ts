@@ -1,1 +1,0 @@
-// Implement HomeController here. It should manage Home page.

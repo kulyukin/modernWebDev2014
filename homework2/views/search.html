@@ -1,0 +1,123 @@
+<div id="searchContainer">
+    <div>
+        <a href="index.html">Home</a> <span class="glyphicon glyphicon-chevron-right"></span>
+        Search Results
+    </div>
+    <br/>
+
+    <div class="row">
+        <form role="form">
+            <div class="col-sm-12 col-md-4">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>Product</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-12">
+                        <input type="text" class="form-control"  placeholder="Product title"><br/>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-12">
+                        <select class="form-control">
+                            <option>Category</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select><br/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-8">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <p>Current price</p>
+                        <div class="row">
+                            <div class="col-xs-6"><input type="text" class="form-control"/></div>
+                            <div class="col-xs-6"><input type="text" class="form-control"/></div>
+                        </div><br/>
+                        <div id="slider"></div><br/>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-12"><p>Max Auction Close Date</p></div>
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="col-xs-12"><input type="date" id="close-date" class="form-control"/></div>
+                                </div><br>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="col-xs-8"><p>Number of Bids</p></div>
+                                    <div class="col-xs-4">
+                                        <input type="number" id="input-number-of-bids" value="3" class="pull-right form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="col-sm-12 col-md-4">Max auction close date</div>-->
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 text-center"><button id="fnd-now-btn" class="btn btn-primary">Find now</button></div>
+        </form>
+    </div>
+    <hr>
+</div>
+
+<h2 id="app-header"></h2>
+
+<div class="row">
+    <!-- Featured Products list with thumbnails and description  -->
+    <ul class="list-unstyled" id="items-list">
+        <li class="col-md-6" ng-repeat="product in model.searchResult">
+            <div class="row">
+
+                <div class="col-xs-4">
+                    <a href="javascript:void(0)"><img ng-src="images/{{product.thumb}}" alt="" class="img-responsive"></a>
+                </div>
+
+                <div class="col-xs-8">
+                    <h2><a href="javascript:void(0)">{{product.title}}</a></h2>
+                    <p>
+                        {{product.description}}
+                    </p>
+                </div>
+
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-sm-push-8">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-12">
+                            <span class="glyphicon glyphicon-usd"></span> {{product.price}}
+                        </div>
+                        <div class="col-xs-8 col-sm-12"><small>Current Price</small></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-12"><span class="glyphicon glyphicon-eye-open"></span> {{product.watchers}}</div>
+                        <div class="col-xs-8 col-sm-12"><small>Watchers</small></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-sm-pull-8">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-12"><b>6 h left</b></div>
+                        <div class="col-xs-8 col-sm-12"><small>{{product.timeleft}}</small></div>
+                    </div>
+                </div>
+            </div>
+            <br/><br/>
+        </li>
+    </ul>
+
+    <!-- / Featured Products list with thumbnails and description  -->
+</div>
+
+
